@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Quiz Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="main">
+        <header class="header">
+            <a href="#" class="logo">C++</a>
+
+            <nav class="navbar">
+                <a href="#" class="active">Home</a>
+                <a href="#" onclick="openPopup('about')">About</a>
+                <div class="dropdown-container">
+                    <select id="servicesDropdown" class="optionlist">
+                        <option value="services">Services</option>
+                        <option value="Java">Java</option>
+                        <option value="cherry">Python</option>
+                        <option value="orange">C++</option>
+                        <option value="strawberry">C Prgming.</option>
+                    </select>
+                  
+                </div>
+                <a href="#" onclick="openPopup('contact')">Contact</a>
+                <span></span>
+                
+                
+                <div id="aboutPopup" class="popup">
+                    <div class="popup-content">
+                      <h2>About</h2>
+                      <p>Technotrainer is a leading placement training website that equips aspiring professionals with the necessary skills and knowledge to excel in the tech industry and secure their dream job.</p>
+                      <button onclick="closePopup('about')">Close</button>
+                    </div>
+                  </div>
+
+                  <div id="contactPopup" class="popup">
+                    <div class="popup-content">
+                      <h2>Contact</h2>
+                      
+                      <p>Mohammed Yaasir A</p>
+                      <p>---------------------------------------------------------------</p>
+                      <p>Call : 9080907069</p>
+                      <p>---------------------------------------------------------------</p>
+                      <p>mdyaasira5241@gmail.com</p>
+                      <p>---------------------------------------------------------------</p>
+
+                      <button onclick="closePopup('contact')">Close</button>
+                    </div>
+                  </div>
+
+            </nav>
+        </header>
+
+        
+        <div class="container">
+            <section class="quiz-section">
+                <div class="quiz-box">
+                    <h1>HAYA Quiz</h1>
+                    <div class="quiz-header">
+                        <span>Quiz Website Tutorials</span>
+                        <span class="header-score">Score: 0/5</span>
+                    </div>
+
+                    <h2 class="question-text">What does HTML stands for ?</h2>
+
+                    <div class="option-list">
+                        <!--<div class="option">
+                            <span>A. Hyper Type Multi Language</span>
+                        </div>
+                        <div class="option">
+                            <span>B. Hyper Text Multiple Language</span>
+                        </div>
+                        <div class="option">
+                            <span>C. Hyper Text Markup Language</span>
+                        </div>
+                        <div class="option">
+                            <span>D. Home Text Multi Language</span>
+                        </div>-->
+                    </div>
+
+                    <div class="quiz-footer">
+                        <span class="question-total">1 of 5 Questions</span>
+                        <button class="next-btn">Next</button>
+                    </div>
+                </div>
+
+                <div class="result-box">
+                    <h2>Quiz Result!</h2>
+                    <div class="percentage-container">
+                        <div class="circular-progress">
+                            <span class="progress-value">0%</span>
+                        </div>
+
+                        <span class="score-text">Your SCORE 0 out of 5</span>
+                    </div>
+
+                    <div class="buttons">
+                        <button class="tryAgain-btn">Try AGAIN</button>
+                        <button class="goHome-btn">Go To HOME</button>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="home">
+                <div class="home-content">
+                    <h1>Quiz Website</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim blanditiis sit id eveniet voluptatum animi error voluptates, minima fuga illum. Voluptatem debitis in ea est tempore atque nemo fuga cum.</p>
+                    <button class="start-btn">Start Quiz</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <div class="popup-info">
+        <h2>Quiz Guide</h2>
+        <span class="info">1.Lorem ipsum dolor sit amet consectetur.</span>
+        <span class="info">2.Lorem ipsum dolor sit amet consectetur adipisicing.</span>
+        <span class="info">3.Lorem ipsum dolor sit amet cons.</span>
+        <span class="info">4.Lorem ipsum dolor sit amet consectetur adipisicing.</span>
+        <span class="info">5.Lorem ipsum dolor sit amet consectetur adipisicing.</span>
+
+        <div class="btn-group">
+            <button class="info-btn exit-btn">Exit Quiz</button>
+            <a href="#" class="info-btn continue-btn">Continue</a>
+        </div>
+    </div>
+
+
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
